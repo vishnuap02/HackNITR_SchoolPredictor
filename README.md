@@ -5,6 +5,9 @@ This is developed using Flask framework for processing request , pandas for data
 This contains only Backend part (using python).
 
 # Backend:
+* main.py file must be run for backend .
+* api.py has limited features and is for local DataBase.
+
 The features supported are:
 1) Creating school records.
 Using POST request in Postman to create new record. The request being :
