@@ -8,15 +8,9 @@ from urllib.parse import quote_plus
 app = Flask(__name__)
 
 def connect_db():
-    # client = pymongo.MongoClient('mongodb://localhost:27017')
-    # username = quote_plus('Vishnu')
-    # password = quote_plus('Vishnuap')
-    # cluster = 'cluster0.cnrej4y.mongodb.net'
-    # authSource = '<authSource>'
-    # authMechanism = '<authMechanism>'
-    # uri = 'mongodb+srv://' + username + ':' + password + '@' + cluster + '/?authSource=' + authSource + '&authMechanism=' + authMechanism
+    
 
-    client = pymongo.MongoClient("mongodb+srv://vishnu:vishnu@cluster0.cnrej4y.mongodb.net/?retryWrites=true&w=majority",tlsCAFile=certifi.where())
+    client = pymongo.MongoClient("mongodb+srv://username:pw@cluster0.cnrej4y.mongodb.net/?retryWrites=true&w=majority",tlsCAFile=certifi.where())
 
 
     dbname = client['hacknitr']
